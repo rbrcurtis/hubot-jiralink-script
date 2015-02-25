@@ -1,0 +1,8 @@
+{
+  "name": "hubot-jiralink-script",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.coffee",
+  "author": "",
+  "license": "MIT"
+}
