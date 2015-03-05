@@ -1,6 +1,6 @@
 
 module.exports = (robot) ->
-  robot.hear /[A-Z]+-[0-9]+/, (msg) ->
-    msg.send "https://inindca.atlassian.net/browse/#{msg.match[0]}"
+  robot.hear /(^|\s)([A-Z]+-[0-9]+)(\s|$)/, (msg) ->
+    msg.send "https://inindca.atlassian.net/browse/#{msg.match[2]}"
 
   
