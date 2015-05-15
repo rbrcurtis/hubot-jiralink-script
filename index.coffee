@@ -167,7 +167,9 @@ module.exports = (robot) ->
       'WIX'
       'IC'
     ]
-    if ticket in thoseGuys then msg.send "https://devjira.inin.com/browse/#{ticket}"
+    project = ticket.replace /([a-z]+)-.*/i, '$1'
+    console.log 'project is', project
+    if project in thoseGuys then msg.send "https://devjira.inin.com/browse/#{ticket}"
     else msg.send "https://inindca.atlassian.net/browse/#{ticket}"
 
   
